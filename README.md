@@ -2,7 +2,9 @@
 
 'Spring Security ' demo sample will help in understanding the Spring Security Architecture, important packages, interfaces, classes inside it which handles authentication and authorization requests in the web applications. It also covers most common security related topics like CORs, CSRF, JWT, OAUTH2, password management, method level security, user, roles & authorities management inside web applications.
 
-## Topics covered in the demo
+Each Section will explore a specific feature and its complete sample demo code. We can jump to any section of interest and each of these section should entirly covering the specific module of spring security independent to other section.
+
+## Topics covered
 
 * Spring Security framework details and it features
 * How to adapt security for a Java web application using Spring Security
