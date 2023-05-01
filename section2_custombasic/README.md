@@ -1,6 +1,6 @@
 # Spring Security Basic customization
 
-We can configure what endpoint to be secured by spring security and which should be left unsecured by simply defining a SecurityFilterChain bean in app context.
+We can configure what endpoint to be secured by spring security and which should be left unsecured by simply defining a SecurityFilterChain bean in app context. Here we say secure /myAccount","/myBalance","/myLoans","/myCards" apis of a bank app and allow all to access "/notices","/contact" api.
 
  @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
