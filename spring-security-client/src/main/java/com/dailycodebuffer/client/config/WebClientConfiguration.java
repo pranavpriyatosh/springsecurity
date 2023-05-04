@@ -1,5 +1,6 @@
 package com.dailycodebuffer.client.config;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager;
@@ -13,6 +14,10 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 public class WebClientConfiguration {
+	/* @Bean
+	    public RestTemplate restTesmplate() {
+	        return new RestTemplate();
+	    }*/
 
     @Bean
     WebClient webClient(OAuth2AuthorizedClientManager authorizedClientManager) {

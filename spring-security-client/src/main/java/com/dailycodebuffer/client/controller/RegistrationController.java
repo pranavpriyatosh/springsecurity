@@ -1,5 +1,6 @@
 package com.dailycodebuffer.client.controller;
 
+
 import com.dailycodebuffer.client.entity.User;
 import com.dailycodebuffer.client.entity.VerificationToken;
 import com.dailycodebuffer.client.event.RegistrationCompleteEvent;
@@ -7,6 +8,8 @@ import com.dailycodebuffer.client.model.PasswordModel;
 import com.dailycodebuffer.client.model.UserModel;
 import com.dailycodebuffer.client.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.*;
@@ -101,8 +104,8 @@ public class RegistrationController {
                         + token;
 
         //sendVerificationEmail()
-        log.info("Click the link to Reset your Password: {}",
-                url);
+     //   log.info("Click the link to Reset your Password: {}",
+     //           url);
         return url;
     }
 
@@ -114,8 +117,9 @@ public class RegistrationController {
                         + verificationToken.getToken();
 
         //sendVerificationEmail()
-        log.info("Click the link to verify your account: {}",
-                url);
+     //   log.info("Click the link to verify your account: {}",
+       //         url);
+        
     }
 
 

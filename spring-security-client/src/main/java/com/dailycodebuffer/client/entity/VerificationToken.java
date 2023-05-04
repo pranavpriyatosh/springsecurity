@@ -1,5 +1,6 @@
 package com.dailycodebuffer.client.entity;
 
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -47,5 +48,26 @@ public class VerificationToken {
         calendar.add(Calendar.MINUTE, expirationTime);
         return new Date(calendar.getTime().getTime());
     }
+
+	
+	public String getToken() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public User getUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Calendar getExpirationTime() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setToken(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

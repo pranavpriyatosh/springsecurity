@@ -1,5 +1,6 @@
 package com.dailycodebuffer.client.event.listener;
 
+
 import com.dailycodebuffer.client.entity.User;
 import com.dailycodebuffer.client.event.RegistrationCompleteEvent;
 import com.dailycodebuffer.client.service.UserService;
@@ -31,7 +32,7 @@ public class RegistrationCompleteEventListener implements
                         + token;
 
         //sendVerificationEmail()
-        log.info("Click the link to verify your account: {}",
-                url);
+        //log.info("Click the link to verify your account: {}",
+        //        url);
     }
 }

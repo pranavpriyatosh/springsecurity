@@ -1,5 +1,6 @@
 package com.dailycodebuffer.client.event;
 
+
 import com.dailycodebuffer.client.entity.User;
 import lombok.Data;
 import lombok.Getter;
@@ -19,4 +20,14 @@ public class RegistrationCompleteEvent extends ApplicationEvent {
         this.user = user;
         this.applicationUrl = applicationUrl;
     }
+
+	public User getUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getApplicationUrl() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
