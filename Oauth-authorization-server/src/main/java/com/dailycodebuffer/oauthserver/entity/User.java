@@ -1,5 +1,6 @@
 package com.dailycodebuffer.oauthserver.entity;
 
+
 import lombok.Data;
 
 import javax.persistence.*;

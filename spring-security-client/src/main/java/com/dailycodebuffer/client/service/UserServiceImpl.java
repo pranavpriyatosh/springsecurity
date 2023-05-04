@@ -1,6 +1,5 @@
 package com.dailycodebuffer.client.service;
 
-
 import com.dailycodebuffer.client.entity.PasswordResetToken;
 import com.dailycodebuffer.client.entity.User;
 import com.dailycodebuffer.client.entity.VerificationToken;

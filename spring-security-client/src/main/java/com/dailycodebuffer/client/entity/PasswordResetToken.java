@@ -1,6 +1,5 @@
 package com.dailycodebuffer.client.entity;
 
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

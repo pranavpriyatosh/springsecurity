@@ -1,6 +1,5 @@
 package com.dailycodebuffer.oauthserver.service;
 
-
 import com.dailycodebuffer.oauthserver.entity.User;
 import com.dailycodebuffer.oauthserver.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

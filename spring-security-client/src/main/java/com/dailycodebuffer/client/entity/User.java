@@ -1,6 +1,5 @@
 package com.dailycodebuffer.client.entity;
 
-
 import lombok.Data;
 
 import javax.persistence.*;

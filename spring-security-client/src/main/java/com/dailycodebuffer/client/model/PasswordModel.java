@@ -1,6 +1,5 @@
 package com.dailycodebuffer.client.model;
 
-
 import lombok.Data;
 
 @Data

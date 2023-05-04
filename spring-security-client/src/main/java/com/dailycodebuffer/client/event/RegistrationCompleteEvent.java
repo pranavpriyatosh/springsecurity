@@ -1,6 +1,5 @@
 package com.dailycodebuffer.client.event;
 
-
 import com.dailycodebuffer.client.entity.User;
 import lombok.Data;
 import lombok.Getter;

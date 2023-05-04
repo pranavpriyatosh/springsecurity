@@ -1,6 +1,5 @@
 package com.dailycodebuffer.client.controller;
 
-
 import com.dailycodebuffer.client.entity.User;
 import com.dailycodebuffer.client.entity.VerificationToken;
 import com.dailycodebuffer.client.event.RegistrationCompleteEvent;

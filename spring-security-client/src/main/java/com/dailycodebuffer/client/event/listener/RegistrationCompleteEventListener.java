@@ -1,6 +1,5 @@
 package com.dailycodebuffer.client.event.listener;
 
-
 import com.dailycodebuffer.client.entity.User;
 import com.dailycodebuffer.client.event.RegistrationCompleteEvent;
 import com.dailycodebuffer.client.service.UserService;
