@@ -4,9 +4,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:user_registration
-    username: root
-    password: Sandhya@123
+    url: jdbc:h2:./data/db
+    username: sa
+    password: 
     driverClassName: org.h2.Driver
   jpa:
     show-sql: true

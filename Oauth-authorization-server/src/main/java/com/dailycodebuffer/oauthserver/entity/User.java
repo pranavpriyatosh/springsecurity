@@ -21,6 +21,7 @@ public class User {
 
     private String role;
     private boolean enabled = false;
+    
 	public String getEmail() {
 		// TODO Auto-generated method stub
 		return null;
