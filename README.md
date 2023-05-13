@@ -408,7 +408,6 @@ spring:
             issuer-uri: http://auth-server:9000
 
 ```
-
 ### Configuration
 ### WebClientConfiguration
 ```
