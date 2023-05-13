@@ -103,8 +103,8 @@ public class RegistrationController {
                         + token;
 
         //sendVerificationEmail()
-     //   log.info("Click the link to Reset your Password: {}",
-     //           url);
+        log.info("Click the link to Reset your Password: {}",
+                url);
         return url;
     }
 
@@ -116,9 +116,8 @@ public class RegistrationController {
                         + verificationToken.getToken();
 
         //sendVerificationEmail()
-     //   log.info("Click the link to verify your account: {}",
-       //         url);
-        
+        log.info("Click the link to verify your account: {}",
+                url);
     }
 
 
