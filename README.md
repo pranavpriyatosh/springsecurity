@@ -415,3 +415,45 @@ spring:
 @Configuration
 public class WebClientConfiguration {
 
+    @Bean
+    WebClient webClient(OAuth2AuthorizedClientManager authorizedClientManager) {
+        ServletOAuth2AuthorizedClientExchangeFilterFunction oauth2Client =
+                new ServletOAuth2AuthorizedClientExchangeFilterFunction(authorizedClientManager);
+        return WebClient.builder()
+                .apply(oauth2Client.oauth2Configuration())
+                .build();
+    }
+
+    @Bean
+    OAuth2AuthorizedClientManager authorizedClientManager(
+            ClientRegistrationRepository clientRegistrationRepository,
+            OAuth2AuthorizedClientRepository authorizedClientRepository) {
+
+        OAuth2AuthorizedClientProvider authorizedClientProvider =
+                OAuth2AuthorizedClientProviderBuilder.builder()
+                        .authorizationCode()
+                        .refreshToken()
+                        .build();
+        DefaultOAuth2AuthorizedClientManager authorizedClientManager = new DefaultOAuth2AuthorizedClientManager(
+                clientRegistrationRepository, authorizedClientRepository);
+        authorizedClientManager.setAuthorizedClientProvider(authorizedClientProvider);
+
+        return authorizedClientManager;
+    }
+}
+
+```
+- We use webClient to called that particular APIs which are added in Resource Server
+
+## Steps to Run
+1. Build Oauth-authorization-server
+2. Build Oauth-resource-server
+3. Build spring-security-client
+4. Run Oauth-authorization-server
+5. Run Oauth-resource-server
+6. Run spring-security-client
+7. The web application is accessible via [localhost:8080]()
+8. It will redirect to Login page. Enter [username]() & [password]() to authorize client.
+9. It will ask for the consent from resource server. Select api.read consent & click on [Submit]() button.
+10. Then you will get the required data from database.
+
