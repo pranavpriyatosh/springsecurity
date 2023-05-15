@@ -3,7 +3,7 @@
 #### Java11
 #### Spring Boot 2.6.3
 #### Spring data jpa for persistence<br/>
-### We created one application with particular API’s & called authorization server. That particular API has to be authenticated by authorization server then only we will be able to access that API’s.Suppose, there are any API’s behind authorization server like Resource Server and we want to connect to the resources after authentication from our client that also handle by authorization server with Oauth2 & Open ID connect.<br/>
+### We created one client application exposing a set of particular API’s ,an authorization server responsible to authN and authZ and an resource server serving data for client app for an user. Exposed APIs has to be authenticated by authorization server before we will be able to access  API’s response.<br/>
 ## OAuth2.0
 #### OAuth2.0, stands for “Open Authorization”, it’s allow application to access resources hosted by other web apps on behalf of a user.
 #### OAuth2.0 is an authorization protocol and NOT an authentication protocol.
