@@ -46,14 +46,4 @@ public class PasswordResetToken {
         calendar.add(Calendar.MINUTE, expirationTime);
         return new Date(calendar.getTime().getTime());
     }
-
-	public User getUser() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Calendar getExpirationTime() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

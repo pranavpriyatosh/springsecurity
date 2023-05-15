@@ -63,7 +63,8 @@ public class UserServiceImpl implements UserService {
         User user = verificationToken.getUser();
         Calendar cal = Calendar.getInstance();
 
-        if ((verificationToken.getExpirationTime().getTime() - cal.getTime().getTime()) <= 0) {
+        if ((verificationToken.getExpirationTime().getTime()
+                - cal.getTime().getTime()) <= 0) {
             verificationTokenRepository.delete(verificationToken);
             return "expired";
         }
@@ -106,8 +107,8 @@ public class UserServiceImpl implements UserService {
         User user = passwordResetToken.getUser();
         Calendar cal = Calendar.getInstance();
 
-        if ((verificationToken.getExpirationTime().getTime() 
-        		- cal.getTime().getTime()) <= 0) {
+        if ((passwordResetToken.getExpirationTime().getTime()
+                - cal.getTime().getTime()) <= 0) {
             passwordResetTokenRepository.delete(passwordResetToken);
             return "expired";
         }

@@ -13,10 +13,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 public class WebClientConfiguration {
-	/* @Bean
-	    public RestTemplate restTesmplate() {
-	        return new RestTemplate();
-	    }*/
 
     @Bean
     WebClient webClient(OAuth2AuthorizedClientManager authorizedClientManager) {

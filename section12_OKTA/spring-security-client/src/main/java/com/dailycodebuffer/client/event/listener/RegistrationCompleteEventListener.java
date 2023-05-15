@@ -31,7 +31,7 @@ public class RegistrationCompleteEventListener implements
                         + token;
 
         //sendVerificationEmail()
-        //log.info("Click the link to verify your account: {}",
-        //        url);
+        log.info("Click the link to verify your account: {}",
+                url);
     }
 }
