@@ -3,11 +3,11 @@
 #### Java11
 #### Spring Boot 2.6.3
 #### Spring data jpa for persistence<br/>
-### We created one application with particular API’s & called authorization server. That particular API has to be authenticated by authorization server then only we will be able to access that API’s.Suppose, there are any API’s behind authorization server like Resource Server and we want to connect to the resources after authentication from our client that also handle by authorization server with Oauth2 & Open ID connect.<br/>
+### We created one client application exposing a set of particular API’s ,an authorization server responsible to authN and authZ and an resource server serving data for client app for an user. Exposed APIs has to be authenticated by authorization server before we will be able to access  API’s response.<br/>
 ## OAuth2.0
 #### OAuth2.0, stands for “Open Authorization”, it’s allow application to access resources hosted by other web apps on behalf of a user.
 #### OAuth2.0 is an authorization protocol and NOT an authentication protocol.
-#### It is designed to granting access to the resources. OAuth2.0 uses Access tokens.
+#### It is designed to granting access to the resources. OAuth2.0 uses Access tokens. 
 ## Resource Owner
 #### The user or system that owns the protected resources and grant access to them.
 ## Client
@@ -140,7 +140,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 - UserDetailsService is the default service provided for user to interact with spring security to check if user is exist or not.
 - In this class loadUserByUsername() method is override to load user from database & send to the spring security.
 - If user = null then throws UserNameNotFoundException. Else it will create user object with granted authorities.
-  <br/><br/>
+<br/><br/>
 ### Configuration
 ### AuthorizationServerConfig
 ```
@@ -219,13 +219,13 @@ public class AuthorizationServerConfig {
 - We are applying default security with applyDefaultSecurity(http) method
 - We implement RegisteredClientRepository which is used to register all clients.
 - We have only one client in this project i.e. **spring-security-client**
-- So, in registeredClientRepository() method we are providing Client details like clientId, clientSecret, authorizationGrantType.
+- So, in registeredClientRepository() method we are providing Client details like clientId, clientSecret, authorizationGrantType. 
 
 <span style="color:red"> 
 Note : 
 You need to define your authorization server URL "http://auth-server:9000" into the host file.
 </span>
-
+ 
 ### DefaultServerConfig
 ```
 @EnableWebSecurity
@@ -455,3 +455,4 @@ public class WebClientConfiguration {
 8. It will redirect to Login page. Enter [username]() & [password]() to authorize client.
 9. It will ask for the consent from resource server. Select api.read consent & click on [Submit]() button.
 10. Then you will get the required data from database.
+

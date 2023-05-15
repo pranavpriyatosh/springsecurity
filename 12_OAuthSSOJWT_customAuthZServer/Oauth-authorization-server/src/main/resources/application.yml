@@ -7,12 +7,12 @@ spring:
     url: jdbc:mysql://localhost:3306/user_registration
     #url: jdbc:h2:./data/db;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
     username: root
-    password: Sandhya@123
+    password: '@XXXXXX'
     driver-class-name: com.mysql.cj.jdbc.Driver
     #driverClassName: org.h2.Driver
   jpa:
     show-sql: true
-      #database-platform: org.hibernate.dialect.H2Dialect
-      #h2:
-      #console:
-    #enabled: true
+    #database-platform: org.hibernate.dialect.H2Dialect
+  #h2:
+    #console:
+      #enabled: true

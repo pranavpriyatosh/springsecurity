@@ -7,7 +7,7 @@ spring:
     #url: jdbc:h2:./data/db;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
     url: jdbc:mysql://localhost:3306/user_registration
     username: root
-    password: Sandhya@123
+    password: '@XXXXXX'
     #driverClassName: org.h2.Driver
 
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -16,8 +16,8 @@ spring:
     #database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
-      #h2:
-      #console:
+  #h2:
+    #console:
       #enabled: true
   security:
     oauth2:
