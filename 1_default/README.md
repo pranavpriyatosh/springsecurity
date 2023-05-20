@@ -1,3 +1,5 @@
+# Default Behaviour
+
 Just by adding spring security dependency at classpath in spring boot app we get below default features:
 
 Requires an authenticated user for any endpoint access(including Boot’s /error endpoint)​
@@ -17,13 +19,18 @@ Mitigates CSRF attacks​
 Mitigates Session Fixation attacks​
 
 Writes Strict-Transport-Security to ensure HTTPS​
+
 Writes X-Content-Type-Options to mitigate sniffing attacks​
+
 Writes Cache Control headers that protect authenticated resources​
+
 Writes X-Frame-Options to mitigate Clickjacking​
 
 Integrates with HttpServletRequest's authentication methods​
 
 Publishes authentication success and failure events
+
+# Customize Credentials 
 
 Default user password can be overrided by adding below properites in application.yml file of springboot app.
 
